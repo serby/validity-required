@@ -9,7 +9,6 @@ const schemata = require('schemata')
       { validators: [ required.setFailureMessage('Where is #{name}?') ] }
     })
 
-
 schema.validate({}, function (error, errors) {
   console.log(error, errors)
   // null, 'Email Address is required'
