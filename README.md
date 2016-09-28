@@ -17,23 +17,28 @@ npm install --save validity-required
 
 ```js
 
-var validity = require('validity')
-  , schemata = require('schemata')
-  , save = require('save')
-  , collection = save('author')
-  , validateEach = require('validity-validate-each')
-
-var schema = schemata(
-    { emailAddresses:
-      { type: Array
-      , validators:
-        { all:
-          [ validteEach(validity.required)
-          , validateEach(validity.email)
-          ] }
-      }
+const schemata = require('schemata')
+  , required = require('.')
+  , schema = schemata(
+    { emailAddress:
+      { validators: [ required ] }
     })
-    
+  , schemaWithCustomMessage = schemata(
+    { emailAddress:
+      { validators: [ required.setFailureMessage('Where is #{name}?') ] }
+    })
+
+
+schema.validate({}, function (error, errors) {
+  console.log(error, errors)
+  // null, 'Email Address is required'
+})
+
+schemaWithCustomMessage.validate({}, function (error, errors) {
+  console.log(error, errors)
+  // null, 'Where is Email Address?'
+})
+
 ```
 
 ## Credits
