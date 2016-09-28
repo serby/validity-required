@@ -18,7 +18,7 @@ npm install --save validity-required
 ```js
 
 const schemata = require('schemata')
-  , required = require('.')
+  , required = require('validity-required')
   , schema = schemata(
     { emailAddress:
       { validators: [ required ] }
