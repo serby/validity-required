@@ -1,7 +1,7 @@
 {
   "name": "validity-required",
   "description": "Basic validity style validator to ensure a required property is present in an object.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "dependencies": {
     "validity": "^1.0.0"
   },
@@ -15,7 +15,9 @@
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
   },
-  "files": [ "index.js" ],
+  "files": [
+    "index.js"
+  ],
   "author": "Paul Serby <paul@serby.net>",
   "license": "ISC",
   "devDependencies": {
