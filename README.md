@@ -5,7 +5,7 @@ Basic validity style validator to ensure a required property is present in an ob
 As part of the modularisation of [validity](https://github.com/serby/validity), this replaces the built-in `validity.required`.
 
 [![build status](https://secure.travis-ci.org/serby/validity-required.svg)](http://travis-ci.org/serby/validity-required)
-[![dependency status](https://david-dm.org/serby/validity-required.svg)](https://david-dm.org/serby/validity-required)
+[![dependency status](https://david-dm.org/serby/validity-required.svg)](https://david-dm.org/serby/validity-required) [![Greenkeeper badge](https://badges.greenkeeper.io/serby/validity-required.svg)](https://greenkeeper.io/)
 
 ## Installation
 
